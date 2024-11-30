@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+    padding: 20px;
+}
+.main-content-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-container {
+    max-width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    color: #555;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Subtle fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.paragraph{
+    transition: all 0.4s ease;
+}
+
+/* Hover effect for paragraphs */
+.paragraph:hover {
+    background-color: #f0f0f0;
+    border-left: 6px solid #3498db;
+    padding-left: 30px;
+    transition: all 0.4s ease;
+    padding-right: 30px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .content-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .content-container {
+        padding: 20px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}

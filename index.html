@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <script>
+        const correctPassword = "DUAapril19@";
+
+        function validatePassword() {
+            const inputPassword = document.getElementById("password").value;
+
+            if (inputPassword === correctPassword) {
+                localStorage.setItem('storedPassword', inputPassword);
+                window.location.href = "flower.html";
+            } else {
+                alert("Incorrect password! Please try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter Password</h2>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button onclick="validatePassword()">Submit</button>
+</body>
+</html>
